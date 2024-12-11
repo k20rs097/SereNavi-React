@@ -1,0 +1,207 @@
+// LocationSearchView componentのスタイルを定義
+.results {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+}
+
+.result-list {
+  display: grid;
+  grid-template-columns: 1fr 6fr;
+  grid-template-rows: repeat(1, 1fr);
+  padding: 1rem;
+  background-color: #ffffff;
+  &__pin {
+    margin: 0 auto;
+    grid-area: 1 / 1 / 2 / 2;
+    font-size: 3rem;
+  }
+  &__distance {
+    margin: 0 auto;
+    grid-area: 2 / 1 / 3 / 2;
+    font-size: 1.4rem;
+  }
+  &__location {
+    margin-top: auto;
+    margin-bottom: auto;
+    grid-area: 1 / 2 / 3 / 4;
+    font-size: 2rem;
+  }
+  &:hover {
+    background-color: #d6d6d6;
+    cursor: pointer;
+  }
+  &__default-text {
+    display: block;
+    font-size: 2rem;
+  }
+}
+
+// SearchTextField componentのスタイルを定義
+.search-text-field {
+  --border-color-gray: #808080;
+
+  display: flex;
+  align-items: center;
+  width: 90%;
+  height: 5vh;
+  margin: 0 auto;
+  background: #f9f9f9;
+  border: 0.1rem solid var(--border-color-gray);
+  border-radius: 10rem;
+  padding: 0 1rem; /* 内側のパディングを追加 */
+
+  .search-text-box {
+    width: 100%;
+    margin-left: 0.5rem;
+    padding: 0.5rem 0;
+    background: none;
+    border: none;
+    font-size: 1.6rem;
+    &__button {
+      @extend .search-text-box;
+      color: var(--border-color-gray);
+      cursor: pointer;
+    }
+  }
+
+  input {
+    width: 100%;
+    font-size: 1.6rem;
+    box-sizing: border-box;
+    text-align: left;
+    padding: 0.5rem;
+    border-radius: 10rem;
+    border: 0rem;
+
+    &::placeholder {
+      color: var(--border-color-gray);
+    }
+
+    &:focus {
+      outline: none;
+      box-shadow: none;
+    }
+
+    &:focus-visible {
+      outline: none;
+    }
+  }
+
+  .search-icon {
+    margin-right: 1rem;
+    font-size: 1.5rem;
+    color: var(--border-color-gray);
+    cursor: pointer;
+  }
+}
+
+// LocationDetailView componentのスタイルを定義
+.location-detail-field {
+  width: 85%;
+  margin: 0 auto;
+  .sheet-text {
+    text-align: left;
+    flex-direction: column;
+    &__location {
+      @extend .sheet-text;
+      font-size: 2rem;
+      padding: 1rem;
+    }
+    &__distance {
+      @extend .sheet-text;
+      font-size: 1.4rem;
+      padding-left: 1.2rem;
+      padding-bottom: 1rem;
+    }
+    &__address {
+      @extend .sheet-text;
+      padding-left: 1rem;
+      font-size: 1.8rem;
+    }
+    &__details {
+      @extend .sheet-text__location;
+    }
+  }
+
+  .time-information {
+    width: 90%;
+    margin: 1rem auto 0 auto;
+    display: flex;
+
+    &__time, &__distance {
+      font-size: 2rem;
+      padding: 0.5rem;
+    }
+  }
+
+  .time-controller-view {
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1rem auto 0 auto;
+    .start-instruction-button {
+      display: block;
+      padding: 1rem;
+      font-size: 2rem;
+      background: #169400;
+      border-radius: 1rem;
+      color: #ededed;
+      cursor: pointer;
+    }
+  }
+}
+
+.set-point-field {
+  --border-color-gray: #808080;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  &__input {
+    width: 80%;
+    font-size: 1.6rem;
+    box-sizing: border-box;
+    padding: 0.5rem;
+    border-radius: 1rem;
+    border: 0.2rem solid var(--border-color-gray);
+  }
+
+  .location-text {
+    font-size: 1.6rem;
+    padding: 0.5rem;
+    cursor: pointer;
+  }
+  .change-location-button {
+    font-size: 3rem;
+    color: var(--border-color-gray);
+  }
+}
+
+.close-button {
+  display: block;
+  align-self: flex-end;
+  margin-left: auto;
+  margin-right: 5%;
+  margin-top: 1%;
+  padding: 0.5rem;
+  color: #808080;
+  font-size: 3rem;
+  cursor: pointer;
+}
+
+.end-route-guidance-button {
+  display: block;
+  margin-left: auto;
+  margin-right: 2rem;
+  margin-top: 2rem;
+  padding: 1rem;
+  font-size: 2rem;
+  background: #b90000;
+  border-radius: 1rem;
+  color: #dcdcdc;
+  cursor: pointer;
+}

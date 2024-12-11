@@ -1,0 +1,53 @@
+.route-select {
+  &__parent {
+    width: 80vw;
+    // height: 20vh;
+    background-color: #ffffff;
+    border-radius: 1rem;
+    display: flex;
+    // flex-direction: row;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory; // スクロールスナップの有効化
+    scroll-padding: 0rem; // スクロール位置の余白調整
+  }
+
+  &__child {    
+    scroll-snap-align: start; // 子要素をスナップ位置に揃える
+    display: flex;
+    min-width: 100%;
+    min-height: 15vh;
+    flex-direction: column;
+  }
+  &::-webkit-scrollbar {
+    display: none;
+  }
+
+  &__row {
+    display: flex;
+    flex-direction: row;
+    margin-top: 1.5rem;
+  }
+
+  &__index {
+    font-size: 2.5rem;
+    padding-top: 1rem;
+    padding-left: 1rem;
+  }
+
+  &__information {
+    padding-left: 2rem;
+    font-size: 3rem;
+  }
+
+  &__button {
+    width: 80%;
+    font-size: 2rem;
+    padding: 0.5rem;
+    margin: auto auto 1rem auto;
+    text-align: center;
+    background-color: #169400;
+    color: #ffffff;
+    border-radius: 10rem;
+    cursor: pointer;
+  }
+}

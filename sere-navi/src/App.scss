@@ -1,21 +1,13 @@
 @use "./scss/destyle.scss";
 @use "./scss/LearnReact.scss";
-@use "./scss/MapComponent.scss";
-@use "./scss/SearchTextField.scss";
+@use "./scss/containers.scss";
+@use "./scss/MapView.scss";
+@use "./scss/FieldStyles.scss";
+@use "./scss/LoadingView.scss";
 
 #root {
   position: relative;
   width: 100%;
-  height: 100vh;
-  overflow: hidden;
-}
-
-.stack-container {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
   height: 100%;
-  display: flex;
-  flex-direction: column;
+  overflow: hidden;
 }

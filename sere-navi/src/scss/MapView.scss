@@ -14,6 +14,17 @@ body, html, #root, .map-container {
     height: 100%;
 }
 
+.map-user-location-button {
+  display: block;
+  text-align: center;
+  width: 4rem;
+  height: 4rem;
+  color: #000000;
+  border-radius: 1rem;
+  font-size: 3rem;
+  cursor: pointer;
+}
+
 // code {
 //   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
 //     monospace;

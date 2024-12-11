@@ -1,0 +1,12 @@
+{
+  "コンビニ": "convenience",
+  "コンビニエンスストア": "convenience",
+  "駅": ["station", "bus_stop"],
+  "病院": "hospital",
+  "公園": "park",
+  "学校": "school",
+  "図書館": "library",
+  "スーパーマーケット": "supermarket",
+  "スーパー": "supermarket",
+  "レストラン": "restaurant"
+}

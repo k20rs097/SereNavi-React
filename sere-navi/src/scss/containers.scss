@@ -1,0 +1,78 @@
+.app {
+  --background-white: #f4f4f4;
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  background-color: var(--background-white);
+}
+.container__map {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.container__buttons {
+  position: absolute;
+  top: 10vh;
+  right: 5%;
+}
+
+.container__open {
+  position: absolute;
+  bottom: 15vh;
+  left: 50%;
+  transform: translate(-50%);
+  width: 100%;
+  max-width: 60rem;
+  z-index: 2;
+}
+
+.container__search,
+.container__location {
+  position: absolute;
+  background-color: var(--background-white);
+  z-index: 1;
+  flex-direction: column;
+  overflow: auto;
+}
+
+.container__loading {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
+}
+
+.container__instruction {
+  position: absolute;
+  top: 5vh;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+.container__end-button {
+  position: absolute;
+  bottom: 20vh;
+  right: 2.5vw;
+
+  display: block;
+  margin-left: auto;
+  margin-right: 2rem;
+  margin-top: 2rem;
+  padding: 1rem;
+  font-size: 2rem;
+  background: #b90000;
+  border-radius: 1rem;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.container__route-select {
+  position: absolute;
+  bottom: 20vh;
+  left: 50%;
+  transform: translate(-50%);
+}
